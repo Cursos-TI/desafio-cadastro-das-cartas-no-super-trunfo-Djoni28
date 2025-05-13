@@ -20,12 +20,15 @@ int main() {
   printf("Vamos começar com o registro da primeira carta!\n");
     printf("Insira o estado (A-H) da primeira carta: ");
     scanf(" %c", &estado1);
+    getchar();
 
     printf("Ótimo! Insira agora o código de identificação dessa carta: ");
     scanf(" %s", codigo1);
+    getchar();
 
     printf("De qual cidade estamos falando?: ");
     scanf(" %[^\n]", cidade1); //Feito dessa forma para permitir espaços, ^ indica "exceto", dessa forma são lidos todos os caracteres exceto \n
+    getchar();
 
     printf("A população de %s é de: ", cidade1);
     scanf(" %lu", &populacao1);
@@ -44,12 +47,16 @@ int main() {
   printf("Certo! Vamos registrar os dados da segunda carta agora.\n");
     printf("Insira o estado (A-H) da segunda carta: ");
     scanf(" %c", &estado2);
+    getchar();
+
 
     printf("Ótimo! Insira agora o código de identificação dessa carta: ");
     scanf(" %s", codigo2);
+    getchar();
 
     printf("De qual cidade estamos falando?: ");
     scanf(" %[^\n]", cidade2);
+    getchar();
 
     printf("A população de %s é de: ", cidade2);
     scanf(" %lu", &populacao2);
